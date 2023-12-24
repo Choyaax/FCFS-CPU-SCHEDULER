@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCFS</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+    <script src ="process.js"></script>
+    <link rel ="stylesheet" href="style.css">
+ 
+</head>
+<body> 
+    <ul id="executionSteps"></ul>
+    <div class ="container mt-4"> 
+  <center> <h2> FCFS CPU scheduling </center></h2> 
+  <p style ="text-align: center;">By Craig Cabugason, Christian Ochea and Joseph Apiag</p>
+   <div class ="mb-3">
+    <label for="numProcesses" class="form-label">Number of Processes:</label>
+    <input type="number" id="numProcesses" class="form-control" >
+    <button onclick="generateTable()" class="btn btn-primary mt-2">Generate Process  </button>  
+    <button onclick="performScheduling();updateGanttChart(); createReadyQueue();displayReadyQueue()" class="btn btn-success mt-2">Execute FCFS scheduling</button>
+
+   
+   </div>
+    <table class ="table table-bordered" id="processTable"> 
+    <thead>
+    <tr>
+        <th>Process Time</th> 
+        <th>Arrival Time</th>
+        <th>Burst Time</th>
+        <th>Completion Time</th>
+        <th>Turn Around Time</th>
+        <th>Waiting Time</th>   
+        <th>Response Time</th>
+        
+    </tr>  
+   </thead>  
+   <tbody>
+ <!--ari mo generate to ang table ay-->
+   </tbody>
+</table>  
+
+<div class="card bg-primary">
+    <div class="card-body text-white" id="readyQueueCard"> 
+        <h5 class="card-title">Ready Queue:</h5>
+        
+        <ul id="readyQueueList" class="list-group-item">
+       
+        </ul>
+
+    </div>
+</div>
+<br> 
+<div id="responseTimeFirstProcess"></div>
+<div>
+    <label for ="requiredTime">Required Time:</label> 
+    <input type ="" id ="requiredTime" readonly>
+</div> 
+
+ 
+</table> 
+
+
+   
+        <h5 class="card-title">Gantt Chart:</h5>
+        <div class="gantt-chart-box">
+      
+        </div>
+    
+
+
+
+
+</div>
+</body>
+</html>

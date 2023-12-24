@@ -1,0 +1,49 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #324cc4;
+  }
+
+
+
+.gantt-chart-box {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.process-box {
+  border: 1px solid #078837;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #078837 cu;
+  display: inline-block;  
+}
+
+.process-box:nth-child(even) {
+  background-color: #078837; /* Different background for even boxes */
+}
+
+.process-id {
+  font-weight: bold;
+  margin-right: 10px; /* Add some space between ID and time */
+}
+
+.process-time {
+  font-size: 12px;
+  color: black;
+}
+
+
+
